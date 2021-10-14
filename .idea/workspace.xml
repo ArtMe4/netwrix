@@ -11,23 +11,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f193712d-3296-4b14-abc5-f5f7cc3ae903" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/laravel/public/img/bg-filter.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laravel/public/img/netwrix_logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laravel/resources/js/components/netwrix/Netwrix.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laravel/resources/sass/app.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laravel/resources/views/companies/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laravel/resources/views/layouts/footer.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laravel/resources/views/layouts/header.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/netwrix.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/netwrix.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/public/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/config/database.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/laravel/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/resources/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/routes/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/webpack.mix.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel/resources/views/companies/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/resources/views/companies/index.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,7 +179,7 @@
       <workItem from="1634132188485" duration="1649000" />
       <workItem from="1634135149494" duration="8846000" />
       <workItem from="1634144189479" duration="16381000" />
-      <workItem from="1634216885718" duration="20625000" />
+      <workItem from="1634216885718" duration="23464000" />
     </task>
     <task id="LOCAL-00001" summary="add">
       <created>1634136064225</created>
@@ -201,7 +188,91 @@
       <option name="project" value="LOCAL" />
       <updated>1634136064225</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add: model for companies">
+      <created>1634250249169</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1634250249169</updated>
+    </task>
+    <task id="LOCAL-00003" summary="feat: api routes for company(get data from VUE)">
+      <created>1634250324500</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1634250324500</updated>
+    </task>
+    <task id="LOCAL-00004" summary="style: scss for all project">
+      <created>1634250360342</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1634250360342</updated>
+    </task>
+    <task id="LOCAL-00005" summary="add: logo">
+      <created>1634250370191</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1634250370191</updated>
+    </task>
+    <task id="LOCAL-00006" summary="feat: add new packages">
+      <created>1634250416778</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1634250416778</updated>
+    </task>
+    <task id="LOCAL-00007" summary="feat: add local db">
+      <created>1634250439822</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1634250439822</updated>
+    </task>
+    <task id="LOCAL-00008" summary="add: view">
+      <created>1634250462689</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1634250462689</updated>
+    </task>
+    <task id="LOCAL-00009" summary="add: component of companies">
+      <created>1634250486172</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1634250486172</updated>
+    </task>
+    <task id="LOCAL-00010" summary="add: logo">
+      <created>1634250495235</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1634250495235</updated>
+    </task>
+    <task id="LOCAL-00011" summary="feat: add new packages">
+      <created>1634250517679</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1634250517679</updated>
+    </task>
+    <task id="LOCAL-00012" summary="feat: add resource route">
+      <created>1634250539418</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1634250539418</updated>
+    </task>
+    <task id="LOCAL-00013" summary="add">
+      <created>1634250616965</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1634250616965</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -220,6 +291,15 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <MESSAGE value="add: model for companies" />
+    <MESSAGE value="feat: api routes for company(get data from VUE)" />
+    <MESSAGE value="style: scss for all project" />
+    <MESSAGE value="feat: add local db" />
+    <MESSAGE value="add: view" />
+    <MESSAGE value="add: component of companies" />
+    <MESSAGE value="add: logo" />
+    <MESSAGE value="feat: add new packages" />
+    <MESSAGE value="feat: add resource route" />
     <MESSAGE value="add" />
     <option name="LAST_COMMIT_MESSAGE" value="add" />
   </component>

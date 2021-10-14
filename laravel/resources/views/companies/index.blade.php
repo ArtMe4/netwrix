@@ -51,7 +51,7 @@
                                     </div>
                                     @foreach($partnersType as $partner)
                                         <div class="selector-item" :class='getClassActive("{{$partner}}", partnerName)'  @click='getPartners("{{$partner}}")'>
-                                            {{ $partner }}
+                                            {{$partner}}
                                         </div>
                                     @endforeach
                                 </div>
