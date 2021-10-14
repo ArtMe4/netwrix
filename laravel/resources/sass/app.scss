@@ -1,0 +1,698 @@
+@mixin desktop {
+    @media screen and (min-width: 1260px) {
+        @content;
+    }
+}
+
+@mixin phone {
+    @media screen and (max-width: 767px) {
+        @content;
+    }
+}
+
+* {
+
+    padding: 0;
+    margin: 0;
+    font-family: OpenSans, sans-serif;
+
+}
+
+@keyframes preloader-rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.body {
+    position: relative;
+}
+
+.preloader {
+
+    position: absolute;
+    width: 100%;
+    height: 100vw;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    background: #FFFFFF;
+    opacity: 0.3;
+    z-index: 1001;
+
+    &__image {
+
+        position: relative;
+        top: 10%;
+        left: 50%;
+        width: 70px;
+        height: 70px;
+        margin-top: -35px;
+        margin-left: -35px;
+        text-align: center;
+        animation: preloader-rotate 2s infinite linear;
+
+    }
+
+}
+
+.preloader {
+
+    &.loaded {
+
+        display: none;
+
+        &__hide {
+
+            transition: 0.00001s opacity;
+            opacity: .3;
+
+        }
+
+    }
+
+}
+
+
+
+.container-header {
+
+    display: flex;
+    align-items: center;
+    padding: 32px 120px;
+
+    @include desktop {
+
+        justify-content: flex-start;
+
+    }
+
+    @include phone {
+
+        padding: 32px 0;
+        justify-content: center;
+
+    }
+
+}
+
+.content-filter {
+
+    background-image: url('/img/bg-filter.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    &__body {
+
+        text-align: center;
+
+        @include desktop {
+
+            padding: 117px 0;
+            max-width: 700px;
+            margin: auto;
+
+        }
+
+        @include phone {
+
+            padding: 49px 0 65px;
+
+        }
+
+
+    }
+
+    &__title {
+
+        font-weight: bold;
+        color: #FFFFFF;
+
+        @include desktop {
+
+            font-size: 46px;
+            line-height: 28px;
+            margin-bottom: 20px;
+        }
+
+        @include phone {
+
+            font-size: 30px;
+            line-height: 40px;
+            max-width: 293px;
+            margin: 0 auto 27px;
+
+        }
+
+    }
+
+    &__description {
+
+        color: #FFFFFF;
+
+        @include desktop {
+
+            font-size: 16px;
+            line-height: 32px;
+            margin-bottom: 48px;
+
+        }
+
+        @include phone {
+
+            font-size: 14px;
+            line-height: 28px;
+            max-width: 293px;
+            margin: 0 auto 40px;
+
+        }
+
+    }
+
+    &__filters {
+
+        width: 100%;
+        margin: auto;
+
+        @include desktop {
+            max-width: 621px;
+        }
+
+        @include phone {
+
+            max-width: 288px;
+
+        }
+
+        .filters {
+
+            &-find {
+
+                @include desktop {
+                    margin-bottom: 18.5px;
+                }
+
+                @include phone {
+                    margin-bottom: 20px;
+                }
+
+                &__form {
+
+                    position: relative;
+
+                    input {
+
+                        width: 100%;
+                        padding: 6.5px 11px 6.5px 16px;
+                        background: #FFFFFF;
+                        border: 1px solid #FFFFFF;
+                        border-radius: 5px;
+                        font-size: 15px;
+                        line-height: 32px;
+                        color: #354556;
+
+                        @include phone {
+                            padding: 6.5px 29px 6.5px 16px;
+                        }
+
+                        &:focus {
+                            outline: none;
+                        }
+
+                        &::placeholder {
+
+                            font-size: 15px;
+                            line-height: 32px;
+                            color: #7F8893;
+
+
+                        }
+
+                    }
+
+                    button {
+
+                        position: absolute;
+                        top: 11.5px;
+                        right: 11px;
+                        z-index: 2;
+                        cursor: pointer;
+                        background: none;
+                        border: none;
+
+                    }
+
+                }
+
+            }
+
+            &-selectors {
+
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                flex-wrap: wrap;
+
+                @include desktop {
+                    gap: 12px;
+                }
+
+                &__group {
+
+                    @include desktop {
+                        width: calc((100% / 3 * 2) - 6px);
+                        border: 2px solid #FFFFFF;
+                        box-sizing: border-box;
+                        border-radius: 4px;
+
+                    }
+                    @include phone {
+                        width: 100%;
+                        flex-wrap: wrap;
+                    }
+
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    .group {
+
+                        &-item {
+
+                            font-size: 13px;
+                            line-height: 20px;
+                            color: #FFFFFF;
+                            position: relative;
+                            cursor: pointer;
+
+                            @include desktop {
+                                flex: 1;
+                            }
+
+                            @include phone {
+                                width: 100%;
+                                border: 2px solid #FFFFFF;
+                                box-sizing: border-box;
+                                border-radius: 4px;
+
+                            }
+
+                            &:first-child {
+
+                                @include phone {
+                                    margin-bottom: 8px;
+                                }
+
+                            }
+
+                            &:nth-child(2) {
+
+                                &:before {
+
+                                    position: absolute;
+                                    top: 0;
+                                    left: -1px;
+                                    width: 2px;
+                                    height: 100%;
+                                    background: #FFFFFF;
+
+                                    @include desktop {
+                                        content: "";
+                                    }
+
+                                    @include phone {
+                                        content: none;
+                                    }
+
+                                }
+
+                            }
+
+                            &__body {
+
+                                padding: 9px 11px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+
+                            }
+
+                            &__selector {
+
+                                display: none;
+                                position: absolute;
+                                z-index: 99;
+                                top: calc(100% + 1.5px);
+                                left: -2px;
+                                width: calc(100% + 2px);
+                                max-height: 301px;
+                                min-height: max-content;
+                                background: #FFFFFF;
+                                border: 1px solid #B7BCC1;
+                                border-radius: 0px 0px 3px 3px;
+
+                                &.active {
+                                    display: block;
+                                }
+
+                                .selector {
+
+                                    &-search {
+
+                                        padding: 5px;
+
+                                        input {
+
+                                            border: 1px solid #B7BCC1;
+                                            box-sizing: border-box;
+                                            border-radius: 2px;
+                                            background: #FFFFFF;
+                                            padding: 5px;
+                                            font-size: 13px;
+                                            line-height: 30px;
+                                            color: #354556;
+                                            width: 100%;
+
+                                            &::placeholder {
+
+                                                color: #7F8893;
+
+                                            }
+
+                                            &:focus {
+                                                outline: none;
+                                            }
+
+                                        }
+
+                                    }
+
+                                    &-items {
+
+                                        font-size: 13px;
+                                        line-height: 31px;
+                                        color: #354556;
+                                        max-height: 100%;
+                                        overflow-y: scroll;
+
+                                    }
+
+                                    &-item {
+
+                                        padding: 5px;
+                                        cursor: pointer;
+                                        transition: .3s all ease;
+                                        background: #FFFFFF;
+                                        text-align: left;
+
+                                        &:hover {
+
+                                            color: #FFFFFF;
+                                            background: #0068DA;
+
+                                        }
+
+                                        &.active {
+
+                                            color: #FFFFFF;
+                                            background: #0068DA;
+
+                                        }
+
+                                    }
+
+                                }
+
+                            }
+
+                        }
+
+                    }
+
+                    &:first-of-type {
+
+                        @include desktop {
+                            width: calc(100% / 3 - 6px);
+                        }
+
+                        @include phone {
+                            width: 100%;
+                        }
+
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+}
+
+.partners {
+
+    margin: 55px auto 120px;
+    position: relative;
+
+    @include desktop {
+        width: 1110px;
+    }
+
+    @include phone {
+        width: 293px;
+    }
+
+    &-items {
+
+        &__item {
+
+            display: flex;
+            justify-content: flex-start;
+            background: #FFFFFF;
+            box-shadow: 0px 1px 7px rgba(5, 27, 43, 0.14);
+            border-radius: 4px;
+
+            @include desktop {
+
+                padding: 37px 65px;
+                gap: 77px;
+                align-items: center;
+
+            }
+
+            @include phone {
+
+                flex-wrap: wrap;
+                padding: 43px 24px 33px;
+
+            }
+
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
+
+            .item {
+
+                &-logo {
+
+                    @include phone {
+                        margin-bottom: 40px;
+                    }
+
+                }
+
+                &-info {
+
+                    display: flex;
+                    align-items: flex-start;
+                    flex-wrap: wrap;
+
+
+                    @include desktop {
+
+                        gap: 80px;
+                        flex-grow: 1;
+                        justify-content: space-between;
+
+                    }
+
+                    @include phone {
+
+                        justify-content: flex-start;
+                        flex-direction: column;
+                        gap: 53px;
+
+                    }
+
+                    &__detail {
+
+                        display: flex;
+                        flex-wrap: wrap;
+
+                        @include desktop {
+                            flex: 0 0 calc(52% - 40px);
+                        }
+
+                        > div {
+                            width: 100%;
+                        }
+
+                        .detail {
+
+                            &-name {
+
+                                font-weight: bold;
+                                font-size: 21px;
+                                line-height: 32px;
+                                color: #354556;
+                                padding-bottom: 14px;
+
+                            }
+
+                            &-address {
+
+                                font-size: 14px;
+                                line-height: 24px;
+                                display: flex;
+                                align-items: center;
+                                color: #354556;
+
+                            }
+
+                        }
+
+                    }
+
+                    &__diff {
+
+                        display: flex;
+                        flex-wrap: wrap;
+
+                        @include desktop {
+
+                            flex: 1 0 calc(48% - 40px);
+                            gap: 96px;
+
+                        }
+
+                        @include phone {
+
+                            position: relative;
+                            width: 100%;
+
+                        }
+
+                        &:before {
+
+                            position: absolute;
+                            width: 100%;
+                            height: 1px;
+                            background: #DCDEE0;
+                            left: 0;
+                            top: -23.5px;
+
+                            @include phone {
+                                content: "";
+                            }
+
+                        }
+
+                        .diff {
+
+                            &-contacts {
+
+                                @include desktop {
+                                    flex: 0 0 calc(50% - 48px);
+                                }
+
+                                @include phone {
+                                    width: 100%;
+                                }
+
+                                &__link {
+
+                                    padding-bottom: 5.5px;
+
+                                    a {
+
+                                        font-size: 14px;
+                                        line-height: 32px;
+                                        display: flex;
+                                        align-items: center;
+                                        color: #0C70B8;
+                                        text-decoration: underline;
+                                        text-decoration-color: #0C70B830;
+
+                                    }
+
+                                }
+
+                                &__phone {
+
+                                    a {
+
+                                        font-size: 13px;
+                                        line-height: 32px;
+                                        color: #354556;
+                                        text-decoration: none;
+
+                                    }
+
+                                }
+
+                            }
+
+                            &-type {
+
+                                font-size: 13px;
+                                line-height: 32px;
+                                color: #354556;
+                                position: relative;
+
+                                @include desktop {
+                                    flex: 0 0 calc(50% - 48px);
+                                }
+
+                                @include phone {
+                                    width: 100%;
+                                }
+
+                                &:before {
+
+                                    position: absolute;
+                                    width: 1px;
+                                    height: 100%;
+                                    background: #DCDEE0;
+                                    left: -48px;
+
+                                    @include desktop {
+                                        content: "";
+                                    }
+
+                                    @include phone {
+                                        content: none;
+                                    }
+
+                                }
+
+
+                            }
+
+                        }
+
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+}
