@@ -98,6 +98,9 @@
         </div>
         <section class="partners">
             <div class="partners-items">
+                <div v-if="dataEmpty">
+                    Your search parameters did not match any partners. Please try different search.
+                </div>
                 <netwrix
                     :partnersitems="this.partners"
                 >

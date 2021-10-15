@@ -14,6 +14,7 @@ const app = new Vue({
         partnerName: 'Type',
         showFilter: false,
         showLoader: false,
+        dataEmpty: false
     },
     methods: {
         showCurrent() {
@@ -29,15 +30,20 @@ const app = new Vue({
             });
         },
         getPartners(type) {
-            this.showFilter = false;
             this.partnerName = type;
-            this.showLoader = true;
             if(type == 'all') {
                 this.partnerName = 'Type';
                 this.getPartnersAll();
             } else {
+                this.showLoader = true;
+                this.showFilter = false;
                 axios.post('/api/getPartners/' + type).then((response) => {
                     this.partners = response.data;
+                    if (this.partners.length == 0) {
+                        this.dataEmpty = true;
+                    } else {
+                        this.dataEmpty = false;
+                    }
                     this.showLoader = false;
                 });
             }
@@ -47,6 +53,11 @@ const app = new Vue({
             this.showFilter = false;
             axios.post('/api/getAllPartners').then((response) => {
                 this.partners = response.data;
+                if (this.partners.length == 0) {
+                    this.dataEmpty = true;
+                } else {
+                    this.dataEmpty = false;
+                }
                 this.showLoader = false;
             });
         },

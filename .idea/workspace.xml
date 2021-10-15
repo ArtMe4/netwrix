@@ -179,7 +179,8 @@
       <workItem from="1634132188485" duration="1649000" />
       <workItem from="1634135149494" duration="8846000" />
       <workItem from="1634144189479" duration="16381000" />
-      <workItem from="1634216885718" duration="23464000" />
+      <workItem from="1634216885718" duration="23779000" />
+      <workItem from="1634265211705" duration="353000" />
     </task>
     <task id="LOCAL-00001" summary="add">
       <created>1634136064225</created>
@@ -272,7 +273,21 @@
       <option name="project" value="LOCAL" />
       <updated>1634250616965</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="feat: all vue logic">
+      <created>1634253095656</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1634253095656</updated>
+    </task>
+    <task id="LOCAL-00015" summary="feat: change">
+      <created>1634253130543</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1634253130543</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -301,7 +316,9 @@
     <MESSAGE value="feat: add new packages" />
     <MESSAGE value="feat: add resource route" />
     <MESSAGE value="add" />
-    <option name="LAST_COMMIT_MESSAGE" value="add" />
+    <MESSAGE value="feat: all vue logic" />
+    <MESSAGE value="feat: change" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: change" />
   </component>
   <component name="WindowStateProjectService">
     <state x="861" y="356" key="#CLI_Interpreters" timestamp="1634134907417">
@@ -328,10 +345,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="782" y="346" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1634134913984" />
-    <state x="873" y="434" key="Vcs.Push.Dialog.v2" timestamp="1634136069097">
+    <state x="873" y="434" key="Vcs.Push.Dialog.v2" timestamp="1634253137228">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="873" y="434" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1634136069097" />
+    <state x="873" y="434" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1634253137228" />
     <state x="93" y="93" width="2375" height="1215" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1634143170168">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
